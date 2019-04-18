@@ -1,0 +1,16 @@
+name: sse-endpoint-mock
+summary: Simulates an SSE endpoint so consumers can relate to it.
+maintainers:
+  - Merlijn Sebrechts <merlijn.sebrechts@ugent.be>
+description: |
+  This Charm simulates an SSE endpoint so SSE consumers can relate to it and recieve the connection information.
+
+  Use this charm when you want SSE consumers to connect to an external SSE endpoint which isn't managed by Juju. Set the `base-url` config option to the url of the real SSE endpoint.
+
+tags:
+  - database
+series:
+   - kubernetes
+provides:
+    sse-endpoint:
+        interface: sse-endpoint

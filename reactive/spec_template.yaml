@@ -1,0 +1,13 @@
+containers:
+  - name: {name}
+    imageDetails:
+      imagePath: {docker_image_path}
+      username: {docker_image_username}
+      password: {docker_image_password}
+    ports:
+    - containerPort: 8080
+      protocol: TCP
+    config:
+      ECHO_TEST: {echo_test}
+    command: ["bash", "-c"]
+    args: ["echo TEST: $ECHO_TEST; /bin/sleep infinity"]

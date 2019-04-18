@@ -1,0 +1,5 @@
+"options":
+  "base-url":
+    "type": "string"
+    "description": "The FQDN of the sse endpoint"
+    "default":
