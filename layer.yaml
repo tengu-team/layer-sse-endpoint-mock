@@ -1,3 +1,4 @@
 includes:
   - "layer:caas-base"
   - "interface:sse-endpoint"
+repo: https://github.com/tengu-team/layer-sse-endpoint-mock.git
